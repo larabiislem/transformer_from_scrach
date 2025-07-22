@@ -11,11 +11,11 @@ from torch.nn import CrossEntropyLoss
 from torch.optim.lr_scheduler import LambdaLR
 from tqdm import tqdm
 import numpy as np
-from settings import Settings
+from .config import Settings
 from tokenizer_utils import build_tokenizer_from_texts
 from conversation_dataset import MovieDialogsDataset
 from transformer_model import DecoderOnlyTransformer
-from datasets import load_dataset
+from .conversation_dataset import load_dataset
 
 def lr_scheduler(optimizer, warmup_steps, total_steps):
     def schedule(step):
