@@ -1,7 +1,7 @@
 import torch
 from torch.utils.data import Dataset
-from .conversation_dataset import load_dataset
-from .settings import Settings
+from conversation_dataset import load_dataset
+from settings import Settings
 
 class MovieDialogsDataset(Dataset):
     """
