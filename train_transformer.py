@@ -29,7 +29,7 @@ def compute_perplexity(loss):
 
 def train():
     # Build tokenizer
-    raw_data = load_dataset("cornell_movie_dialogs", split="train")
+    raw_data = load_dataset("cornell_movie_dialog", split="train")
     all_utterances = []
     for dialog in raw_data["conversations"]:
         for utter in dialog["utterances"]:
