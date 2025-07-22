@@ -1,6 +1,12 @@
+"""
+conversation_dataset.py
+
+Dataset utilities for Cornell Movie Dialogs Corpus.
+"""
+
 import torch
 from torch.utils.data import Dataset
-from conversation_dataset import load_dataset
+from datasets import load_dataset  # <-- correction ici
 from settings import Settings
 
 class MovieDialogsDataset(Dataset):
@@ -31,7 +37,7 @@ class MovieDialogsDataset(Dataset):
         tokens += [self.tokenizer.eos_token_id]
 
         tokens = tokens[:self.max_length]
-        attention = [1] * len(tokens)
+        attention = [1] * len(tokens
 
         pad_amount = self.max_length - len(tokens)
         if pad_amount > 0:
