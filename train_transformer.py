@@ -11,7 +11,7 @@ from torch.nn import CrossEntropyLoss
 from torch.optim.lr_scheduler import LambdaLR
 from tqdm import tqdm
 import numpy as np
-from .config import Settings
+from .settings import Settings
 from tokenizer_utils import build_tokenizer_from_texts
 from conversation_dataset import MovieDialogsDataset
 from transformer_model import DecoderOnlyTransformer

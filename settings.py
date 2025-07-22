@@ -1,4 +1,8 @@
+"""
+settings.py
 
+Configuration module for the transformer training and inference.
+"""
 
 class Settings:
     MODEL_DIM = 512
