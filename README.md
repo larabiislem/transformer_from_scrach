@@ -88,10 +88,7 @@ python -m venv transformer_env
 source transformer_env/bin/activate  # On Windows: transformer_env\Scripts\activate
 ```
 
-3. **Install dependencies:**
-```bash
-pip install -r requirements.txt
-```
+
 
 ## Usage
 
